@@ -1,0 +1,15 @@
+name: verbatim
+version: "0.1.0"
+description: "Stops Hermes from rounding, rephrasing, or swapping an exact value you stated. A skill can ask it to remember. This blocks the write and holds the reply."
+author: Alex
+license: MIT
+requires_hermes: ">=0.22.0"
+provides_tools:
+  - verbatim_pin
+  - verbatim_list
+  - verbatim_drop
+  - verbatim_check
+provides_hooks:
+  - pre_llm_call
+  - pre_tool_call
+  - transform_llm_output
